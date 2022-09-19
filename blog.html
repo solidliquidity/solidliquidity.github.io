@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\lharding_prm\Desktop\Python\Blogging Website\public\css\blog.css">
+
+</head>
+
+<body>
+    <div class="blog">
+        <textarea type="text" class="title" placeholder="Blog title..."></textarea>
+        <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
+    </div>
+    <div class="blog-options">
+        <button class="btn dark publish-btn">publish</button>
+        <input type="file" accept="image/*" id="image-upload" hidden>
+        <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics-compat.js"></script>
+    
+
+    <script type = "module" src="firebase.js"></script>
+    <script type = "module" src="editor.js"></script>
+
+</body>
